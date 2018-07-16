@@ -4,7 +4,7 @@
 ## Clean workspace
 rm(list=ls(all=TRUE))
 
-setwd("D:/Users/210906/Dropbox/edu/JohnsHopkins/ExplanatoryData/R")
+setwd("/resources/rstudio/work/test2/data")
 data <- read.table("household_power_consumption.txt", sep=";", header=T)
 
 # convert from factor to numeric
