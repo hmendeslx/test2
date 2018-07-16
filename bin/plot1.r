@@ -4,9 +4,7 @@
 ## Clean workspace
 rm(list=ls(all=TRUE))
 
-#setwd("D:/edu/JohnsHopkins/ExplanatoryData/R")
-
-setwd("/resources/bin/ExData_Plotting1/data")
+setwd("/resources/rstudio/work/test2/data")
 data <- read.table("household_power_consumption.txt", sep=";", header=T)
 
 # convert from factor to numeric
@@ -22,6 +20,6 @@ hist(data_to_plot$Global_active_power, col="red", main="Global Active Power",
      xlab="Global Active Power (Kilowats)")
 
 # Default = 480x480 px
-setwd("/resources/bin/ExData_Plotting1/results")
-dev.copy(png, "plot1A.png")
+setwd("/resources/rstudio/work/test2/results")
+dev.copy(png, "plot1.png")
 dev.off()
