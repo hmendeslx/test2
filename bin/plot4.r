@@ -7,6 +7,7 @@ rm(list=ls(all=TRUE))
 setwd("/resources/rstudio/work/test2/data")
 data <- read.table("household_power_consumption.txt", sep=";", header=T)
 
+plot(data$Global_active_power)
 
 # convert from factor to numeric
 data$Global_active_power <- as.numeric(as.character(data$Global_active_power))
